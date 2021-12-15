@@ -208,7 +208,7 @@ p {
 }
 
 img {
-    width: 100%;
+    width: 17%;
     overflow: hidden;
 }
 
@@ -1463,9 +1463,18 @@ The Clients
 }
 
 .pricing-item-regular .icon img {
-    width: 120px;
-    height: 106px;
-    margin-bottom: 30px;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.pricing-item-regular .image-sosmed {
+    width: 50px;
+    max-height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .pricing-item-regular ul li {
@@ -1540,15 +1549,26 @@ The Clients
 }
 
 .pricing-item-pro .icon img {
-    width: 120px;
-    height: 106px;
-    margin-bottom: 30px;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.pricing-item-pro .image-sosmed {
+    width: 50px;
+    max-height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .pricing-item-pro ul li {
     color: #4b8ef1;
     font-size: 15px;
     margin-bottom: 15px;
+    word-spacing: normal;
+    margin-top: 15px;
 }
 
 .pricing-item-pro ul li:last-child {
@@ -2018,7 +2038,6 @@ a.btn_red {
     clear: both;
     overflow: hidden;
 }
-
 
 /* 
 ---------------------------------------------
