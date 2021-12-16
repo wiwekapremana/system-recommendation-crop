@@ -1,0 +1,17 @@
+.relative-ul {
+  position: relative;
+}
+
+.absolute-sosial-media {
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+}
+
+.badge-black {
+  background-color: #36c2f8;
+  color: white;
+  padding: 0.1rem 0.7rem;
+  border-radius: 0.3rem;
+  z-index: 200;
+}
