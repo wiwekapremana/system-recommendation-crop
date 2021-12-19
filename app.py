@@ -12,8 +12,8 @@ model = pickle.load(open('model.pkl', 'rb'))
 b = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
      12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
 
-a = ['Apple', 'Banana', 'blackgram', 'chickpea', 'coconut', 'coffee', 'cotton', 'grapes', 'jute', 'kidney beans', 'lentil',
-     'maize', 'mango', 'moth beans', 'mung bean', 'muskmelon', 'orange', 'papaya', 'pigeonpeas', 'pomegranate', 'Rice', 'Watermelon']
+a = ['Apel', 'Pisang', 'Kacang Hitam', 'Buncis', 'coconut', 'Kopi', 'Kapas', 'Anggur', 'Rami', 'Kacang Merah', 'Kacang Lentil',
+     'Jagung', 'Mangga', 'Kacang Matki', 'Kacang Hijau', 'Melon', 'Jeruk', 'Pepaya', 'Kacang Gude', 'Delima', 'Padi', 'Semangka']
 
 a = pd.DataFrame(a, columns=['label'])
 b = pd.DataFrame(b, columns=['encoded'])
@@ -46,6 +46,8 @@ def predict():
 
     pred1 = predict_proba(n, p, k, temp, humid, pH, rain)
     fig, axes = plt.subplots()
+
+    plt.title('Rekomendasi Tanaman',fontdict={'fontsize': 20, 'fontweight': 'medium'})
     axes.pie(x=pred1, autopct='%1.1f%%', labels=pred1.index, explode=(0.1, 0, 0, 0, 0), shadow=True, startangle=90)
 
     img = BytesIO()
