@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
 
     <title>TanamSaja -- Sistem Rekomendasi Tanaman Pangan</title>
 
     <!-- Bootstrap core CSS -->
-    <link
-      href="../static/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!--
 
@@ -32,127 +24,103 @@ https://templatemo.com/tm-570-chain-app-dev
 -->
 
     <!-- Additional CSS Files -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="../static/assets/css/templatemo-chain-app-dev.css"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../static/assets/css/templatemo-chain-app-dev.css" />
     <link rel="stylesheet" href="../static/assets/css/animated.css" />
     <link rel="stylesheet" href="../static/assets/css/owl.css" />
     <link rel="stylesheet" href="../static/assets/css/custom.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- ***** Preloader Start ***** -->
     <div id="js-preloader" class="js-preloader">
-      <div class="preloader-inner">
-        <span class="dot"></span>
-        <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </div>
     </div>
     <!-- ***** Preloader End ***** -->
 
     <!-- ***** Header Area Start ***** -->
-    <header
-      class="header-area header-sticky wow slideInDown"
-      data-wow-duration="0.75s"
-      data-wow-delay="0s"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="main-nav">
-              <!-- ***** Logo Start ***** -->
-              <a href="index.html" class="logo">
-                <img src="../static/assets/images/logo.png" alt="TanamSaja" />
-              </a>
-              <!-- ***** Logo End ***** -->
-              <!-- ***** Menu Start ***** -->
-              <ul class="nav">
-                <li class="scroll-to-section">
-                  <a href="#top" class="active">Home</a>
-                </li>
-                <li class="scroll-to-section">
-                  <a href="#predict">Predict</a>
-                </li>
-                <li class="scroll-to-section"><a href="#about">About</a></li>
-              </ul>
-              <a class="menu-trigger">
-                <span>Menu</span>
-              </a>
-              <!-- ***** Menu End ***** -->
-            </nav>
-          </div>
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="../static/assets/images/logo.png" alt="TanamSaja" />
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section">
+                                <a href="#top" class="active">Home</a>
+                            </li>
+                            <li class="scroll-to-section">
+                                <a href="#predict">Predict</a>
+                            </li>
+                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                        </ul>
+                        <a class="menu-trigger">
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div>
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <div
-      class="main-banner wow fadeIn"
-      id="top"
-      data-wow-duration="1s"
-      data-wow-delay="0.5s"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+    <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class="container">
             <div class="row">
-              <div class="col-lg-6 align-self-center">
-                <div
-                  class="left-content show-up header-text wow fadeInLeft"
-                  data-wow-duration="1s"
-                  data-wow-delay="1s"
-                >
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <h2>Sistem Rekomendasi Tanaman Pangan Untuk Budidaya</h2>
-                      <p>
-                        Kami akan memberikan rekomendasi tanaman pangan
-                        berdasarkan dari hasil prediksi dengan memanfaatkan
-                        Machine Learning untuk membantu anda dalam memilih
-                        tanaman yang tepat untuk dibudidayakan.
-                      </p>
-                    </div>
-                    <div class="col-lg-12">
-                      <button type="button" class="btn btn-secondary">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h2>Sistem Rekomendasi Tanaman Pangan Untuk Budidaya</h2>
+                                        <p>
+                                            Kami akan memberikan rekomendasi tanaman pangan berdasarkan dari hasil prediksi dengan memanfaatkan Machine Learning untuk membantu anda dalam memilih tanaman yang tepat untuk dibudidayakan.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <button type="button" class="btn btn-secondary">
                         <a href="#predict">Prediksi Sekarang</a>
                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <img src="assets/images/slider-dec.png" alt="" />
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="col-lg-6">
-                <div
-                  class="right-image wow fadeInRight"
-                  data-wow-duration="1s"
-                  data-wow-delay="0.5s"
-                >
-                  <img src="assets/images/slider-dec.png" alt="" />
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
     <br />
     <br />
-    <div class="container px-4 px-lg-5 h-150">
-      <form id="predict" action="{{url_for('predict')}}" method="post">
+    <div class="container px-4 px-lg-5 h-150" id="predict">
         <div class="row">
-          <div class="col">
-            <label for="n" class="form-label"
-              ><b>Nitrogen(N) value in soil</b></label
+            <h3 style="text-align: center;">Prediksi Tanaman Pangan</h3>
+        </div>
+        <br>
+        <br>
+        <form action="{{url_for('predict')}}" method="post">
+            <div class="row">
+                <div class="col">
+                    <label for="n" class="form-label"><b>Nilai Nitrogen dalam Tanah (N)</b></label
             >
             <input
               type="number"
@@ -166,7 +134,7 @@ https://templatemo.com/tm-570-chain-app-dev
           </div>
           <div class="col">
             <label for="p" class="form-label"
-              ><b>Phosphorous(P) value in soil</b></label
+              ><b>Nilai Phosphorous(P) dalam Tanah</b></label
             >
             <input
               type="number"
@@ -180,7 +148,7 @@ https://templatemo.com/tm-570-chain-app-dev
           </div>
           <div class="col">
             <label for="k" class="form-label"
-              ><b>Potassium(K) value in soil</b></label
+              ><b>Nilai Potassium(K) dalam Tanah</b></label
             >
             <input
               type="number"
@@ -196,7 +164,7 @@ https://templatemo.com/tm-570-chain-app-dev
         <div class="row">
           <div class="col">
             <label for="Temperature" class="form-label"
-              ><b>Temperature in celcius</b></label
+              ><b>Temperature dalam celcius</b></label
             >
             <input
               type="number"
@@ -212,7 +180,7 @@ https://templatemo.com/tm-570-chain-app-dev
           </div>
           <div class="col">
             <label for="Humidity" class="form-label"
-              ><b>Humidity in percent</b></label
+              ><b>Humidity dalam percent</b></label
             ><br />
             <input
               type="number"
@@ -228,7 +196,7 @@ https://templatemo.com/tm-570-chain-app-dev
         <div class="row">
           <div class="col">
             <label for="PH" class="form-label"
-              ><b>PH value of the soil</b></label
+              ><b>Tekanan PH dalam tanah</b></label
             ><br />
             <input
               type="number"
@@ -244,7 +212,7 @@ https://templatemo.com/tm-570-chain-app-dev
           </div>
           <div class="col">
             <label for="rain_fall" class="form-label"
-              ><b>Rain Fall in millimeters (mm)</b></label
+              ><b>Curah Hujan dalam millimeters (mm)</b></label
             ><br />
             <input
               type="number"
@@ -264,10 +232,11 @@ https://templatemo.com/tm-570-chain-app-dev
       </form>
     </div>
     <div id="result">
-      <img
-        style="width: 50%; height: auto"
+      <center><img
+        style="width: 50%; height: auto;"
         src="data:image/png;base64, {{ plot_url }}"
-      />
+      /></center>
+      
     </div>
 
     <div id="about" class="pricing-tables">
@@ -336,63 +305,22 @@ https://templatemo.com/tm-570-chain-app-dev
     <footer id="newsletter">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <div class="section-heading">
-              <h4>
-                Join our mailing list to receive the news &amp; latest trends
-              </h4>
-            </div>
-          </div>
-          <div class="col-lg-6 offset-lg-3">
-            <form id="search" action="#" method="GET">
-              <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                  <fieldset>
-                    <input
-                      type="address"
-                      name="address"
-                      class="email"
-                      placeholder="Email Address..."
-                      autocomplete="on"
-                      required
-                    />
-                  </fieldset>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                  <fieldset>
-                    <button type="submit" class="main-button">
-                      Subscribe Now <i class="fa fa-angle-right"></i>
-                    </button>
-                  </fieldset>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="row">
           <div class="col-lg-3">
             <div class="footer-widget">
-              <h4>Contact Us</h4>
-              <p>Rio de Janeiro - RJ, 22795-008, Brazil</p>
-              <p><a href="#">010-020-0340</a></p>
-              <p><a href="#">info@company.co</a></p>
+              <h4>Kontak Kami</h4>
+              <p><a href="mailto:wiwekapremana@gmail.com?subject = Feedback&body = Message">wiwekapremana@gmail.com<a></p>
+              <p><a href="mailto:wiwekapremana@gmail.com?subject = Feedback&body = Message">wiwekapremana@gmail.com<a></p>
             </div>
           </div>
           <div class="col-lg-3">
             <div class="footer-widget">
-              <h4>About Us</h4>
+              <h4>Tentang Kami</h4>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Prediksi</a></li>
+                <li><a href="#">Tentang</a></li>
               </ul>
-              <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Pricing</a></li>
-              </ul>
+
             </div>
           </div>
           <div class="col-lg-3">
