@@ -12,8 +12,8 @@ model = pickle.load(open('model.pkl', 'rb'))
 b = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
      12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
 
-a = ['Apel', 'Pisang', 'Kacang Hitam', 'Buncis', 'coconut', 'Kopi', 'Kapas', 'Anggur', 'Rami', 'Kacang Merah', 'Kacang Lentil',
-     'Jagung', 'Mangga', 'Kacang Matki', 'Kacang Hijau', 'Melon', 'Jeruk', 'Pepaya', 'Kacang Gude', 'Delima', 'Padi', 'Semangka']
+a = ['Apel', 'Pisang', 'Kacang Hitam', 'Buncis', 'Kelapa', 'Kopi', 'Kapas', 'Anggur', 'Rami', 'Kacang Merah', 'Kacang Lentil',
+     'Jagung', 'Mangga', 'Kacang Matki', 'Kacang Hijau', 'Musk Melon', 'Jeruk', 'Pepaya', 'Kacang Gude', 'Delima', 'Padi', 'Semangka']
 
 a = pd.DataFrame(a, columns=['label'])
 b = pd.DataFrame(b, columns=['encoded'])
@@ -43,7 +43,8 @@ def predict():
     humid = request.form.get('Humidity')
     pH = request.form.get('PH')
     rain = request.form.get('rain_fall')
-
+    data = [[n, p, k, temp, humid, pH, rain]]
+    pred2 = model.predict(data)
     pred1 = predict_proba(n, p, k, temp, humid, pH, rain)
     fig, axes = plt.subplots()
 
@@ -56,7 +57,12 @@ def predict():
     img.seek(0)
     plot_url = base64.b64encode(img.getvalue()).decode('utf8')
 
-    return render_template('index.html', plot_url=plot_url)
+    for i in range(0, len(classes)):
+        if(classes.encoded[i]==pred2):
+            output=classes.index[i].upper()
+    return render_template('index.html',plot_url=plot_url, prediction_text=format(output))
+
+    # return render_template('index.html', plot_url=plot_url)
 
 if __name__ == "__main__":
     app.run(debug=True)
