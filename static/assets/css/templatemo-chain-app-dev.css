@@ -1770,6 +1770,26 @@ Free Quote
     box-shadow: 0 0 10px #000;
 }
 
+@media(max-width: 991px) {
+    .team-section .team-items .item {
+        flex-basis: calc(50% - 30px);
+        max-width: calc(50% - 30px);
+    }
+}
+
+@media(max-width: 767px) {
+    .team-section .team-items .item {
+        flex-basis: calc(100%);
+        max-width: calc(100%);
+    }
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
 
 /* 
 ---------------------------------------------

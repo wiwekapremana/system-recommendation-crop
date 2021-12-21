@@ -59,12 +59,12 @@ https://templatemo.com/tm-570-chain-app-dev
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section">
-                                <a href="#top" class="active">Home</a>
+                                <a href="#top" class="active">Beranda</a>
                             </li>
                             <li class="scroll-to-section">
-                                <a href="#predict">Predict</a>
+                                <a href="#rec">Rekomendasi</a>
                             </li>
-                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                            <li class="scroll-to-section"><a href="#about">Tentang Kami</a></li>
                         </ul>
                         <a class="menu-trigger">
                             <span>Menu</span>
@@ -93,7 +93,7 @@ https://templatemo.com/tm-570-chain-app-dev
                                     </div>
                                     <div class="col-lg-12">
                                         <button type="button" class="btn btn-secondary">
-                        <a href="#predict">Prediksi Sekarang</a>
+                        <a href="#rec">Prediksi Sekarang</a>
                       </button>
                                     </div>
                                 </div>
@@ -231,15 +231,83 @@ https://templatemo.com/tm-570-chain-app-dev
         <br />
       </form>
     </div>
-    <div id="result">
-      <center><img
+    <div id="result" class="position-relative">
+      <p class="text-center">{{prediction_text}}</p>
+     <img class="rounded mx-auto d-block"
         style="width: 50%; height: auto;"
         src="data:image/png;base64, {{ plot_url }}" alt="Hasil Rekomendasi"
-      /></center>
-      
+      />
+      {% if prediction_text == "rice" %}
+				<h1>Prediction: <span class='Rice'> You have choosen Rice.</span></h1>
+				<img class="gif" src="{{ url_for('static', filename='rice.jpg') }}" alt="Rice Image">
+			{% elif prediction_text == "maize" %}
+				<h1>Prediction: <span class='Maize'>You have choosen Maize.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='maize.jfif') }}" alt="Maize Image">
+			{% elif prediction_text == "chickpea" %}
+				<h1>Prediction: <span class='Maize'>You have choosen chickpea.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='chickpea.jfif') }}" alt="chickpea Image">
+			{% elif prediction_text == "KACANG MERAH" %}
+				<h1>Prediction: <span class='kidneybeans'>You have choosen kidneybeans.</span></h1>
+				<img class="gif1" src="../static/assets/images/weka.png" alt="kidneybeans Image">		
+			{% elif prediction_text == "pigeonpeas" %}
+				<h1>Prediction: <span class='pigeonpeas'>You have choosen pigeonpeas.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='pigeonpeas.jfif') }}" alt="pigeonpeas Image">	
+			{% elif prediction_text == "mothbeans" %}
+				<h1>Prediction: <span class='mothbeans'>You have choosen mothbeans.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='mothbeans.jfif') }}" alt="mothbeans Image">		
+			{% elif prediction_text == "mungbean" %}
+				<h1>Prediction: <span class='mungbean'>You have choosen mungbean.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='mungbean.jfif') }}" alt="mungbeans Image">
+			{% elif prediction_text == "lentil" %}
+				<h1>Prediction: <span class='lentil'>You have choosen lentil.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='lentil.jpg') }}" alt="lentil Image">
+			{% elif prediction_text == "pomegranate" %}
+				<h1>Prediction: <span class='pomegranate'>You have choosen pomegranate.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='pomegranate.jfif') }}" alt="pomegranate Image">
+			{% elif prediction_text == "banana" %}
+				<h1>Prediction: <span class='banana'>You have choosen banana.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='banana.jfif') }}" alt="banana Image">
+			{% elif prediction_text == "banana" %}
+				<h1>Prediction: <span class='banana'>You have choosen banana.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='banana.jfif') }}" alt="banana Image">	
+			{% elif prediction_text == "mango" %}
+				<h1>Prediction: <span class='mango'>You have choosen manogo.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='mango.jfif') }}" alt="mango Image">
+			{% elif prediction_text == "grapes" %}
+				<h1>Prediction: <span class='grapes'>You have choosen grapes.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='grapes.jfif') }}" alt="grapes Image">
+			{% elif prediction_text == "watermelon" %}
+				<h1>Prediction: <span class='watermelon'>You have choosen watermelon.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='watermelon.jfif') }}" alt="watermelon Image">
+			{% elif prediction_text == "muskmelon" %}
+				<h1>Prediction: <span class='muskmelon'>You have choosen muskmelon.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='muskmelon.jfif') }}" alt="muskmelon Image">
+			{% elif prediction_text == "apple" %}
+				<h1>Prediction: <span class='apple'>You have choosen apple.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='apple.jfif') }}" alt="apple Image">
+			{% elif prediction_text == "orange" %}
+				<h1>Prediction: <span class='orange'>You have choosen orange.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='orange.jfif') }}" alt="orange Image">
+			{% elif prediction_text == "papaya" %}
+				<h1>Prediction: <span class='papaya'>You have choosen papaya.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='papaya.jfif') }}" alt="papaya Image">
+			{% elif prediction_text == "coconut" %}
+				<h1>Prediction: <span class='coconut'>You have choosen coconut.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='coconut.jfif') }}" alt="coconut Image">
+			{% elif prediction_text == "cotton" %}
+				<h1>Prediction: <span class='cotton'>You have choosen cotton.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='cotton.jfif') }}" alt="cotton Image">	
+			{% elif prediction_text == "jute" %}
+				<h1>Prediction: <span class='jute'>You have choosen jute.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='jute.jfif') }}" alt="jute Image">
+			{% elif prediction_text == "coffee" %}
+				<h1>Prediction: <span class='coffee'>You have choosen coffee.</span></h1>
+				<img class="gif1" src="{{ url_for('static', filename='coffee.jfif') }}" alt="coffee Image">
+						
+			{% endif %}
     </div>
 
-    <div id="about" class="pricing-tables">
+    <!-- <div id="about" class="pricing-tables">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
@@ -300,7 +368,57 @@ https://templatemo.com/tm-570-chain-app-dev
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+    <section class="team-section">
+      <div class="container">
+          <div class="team-row">
+              <div class="section-title">
+                  <h1>ABOUT ME</h1>
+              </div>
+          </div>
+          <div class="team-row">
+              <div class="team-items">
+                  <div class="item">
+                      <img src="../static/assets/images/weka.png" alt="team" />
+                      <div class="inner">
+                          <div class="info">
+                              <h5>Komang Wiweka Premana</h5>
+                              <p>1915091026</p>
+                              <div class="social-links">
+                                  <a href="https://www.facebook.com/wiweka.premanaa/"><span
+                                          class="fa fa-facebook"></span></a>
+                                  <a href="https://twitter.com/Wiweka19"><span class="fa fa-twitter"></span></a>
+                                  <a href="https://www.instagram.com/wiwekapremana/"><span
+                                          class="fa fa-instagram"></span></a>
+                                  <a href="https://www.youtube.com/channel/UCR7VGM6MUkRZBqZrls9xNnQ"><span
+                                          class="fa fa-youtube"></span></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                    <img src="../static/assets/images/sinta.png" alt="team" />
+                    <div class="inner">
+                        <div class="info">
+                            <h5>Anak Agung Sinta Trisnajayanti</h5>
+                            <p>1915091026</p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/wiweka.premanaa/"><span
+                                        class="fa fa-facebook"></span></a>
+                                <a href="https://twitter.com/Wiweka19"><span class="fa fa-twitter"></span></a>
+                                <a href="https://www.instagram.com/wiwekapremana/"><span
+                                        class="fa fa-instagram"></span></a>
+                                <a href="https://www.youtube.com/channel/UCR7VGM6MUkRZBqZrls9xNnQ"><span
+                                        class="fa fa-youtube"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          
+      </div>
+  </section>
 
     <footer id="newsletter">
       <div class="container">
