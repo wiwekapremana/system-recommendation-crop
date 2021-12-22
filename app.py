@@ -13,7 +13,7 @@ b = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
      12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
 
 a = ['Apel', 'Pisang', 'Kacang Hitam', 'Buncis', 'Kelapa', 'Kopi', 'Kapas', 'Anggur', 'Rami', 'Kacang Merah', 'Kacang Lentil',
-     'Jagung', 'Mangga', 'Kacang Matki', 'Kacang Hijau', 'Musk Melon', 'Jeruk', 'Pepaya', 'Kacang Gude', 'Delima', 'Padi', 'Semangka']
+     'Jagung', 'Mangga', 'Kacang Matki', 'Kacang Hijau', 'Muskmelon', 'Jeruk', 'Pepaya', 'Kacang Gude', 'Delima', 'Padi', 'Semangka']
 
 a = pd.DataFrame(a, columns=['label'])
 b = pd.DataFrame(b, columns=['encoded'])
@@ -48,11 +48,11 @@ def predict():
     pred1 = predict_proba(n, p, k, temp, humid, pH, rain)
     fig, axes = plt.subplots()
 
-    plt.title('Rekomendasi Tanaman',fontdict={'fontsize': 20, 'fontweight': 'medium'})
+    plt.title('5 Rekomendasi Tanaman untuk Budidaya',fontdict={'fontsize': 20, 'fontweight': 'medium'})
     axes.pie(x=pred1, autopct='%1.1f%%', labels=pred1.index, explode=(0.1, 0, 0, 0, 0), shadow=True, startangle=90)
 
     img = BytesIO()
-    plt.savefig(img, format='png')
+    plt.savefig(img, format='png', transparent=True)
     plt.close()
     img.seek(0)
     plot_url = base64.b64encode(img.getvalue()).decode('utf8')
