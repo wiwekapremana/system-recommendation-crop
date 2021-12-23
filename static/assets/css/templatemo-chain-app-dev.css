@@ -284,6 +284,33 @@ body {
     z-index: 2;
 }
 
+.showcase .row {
+    padding-top: 10px;
+}
+
+.showcase .showcase-text {
+    padding: 3rem;
+    text-align: center;
+}
+
+.showcase .showcase-text p {
+    margin-top: 10px;
+    text-align: justify;
+    color: #000;
+}
+
+.showcase .showcase-img {
+    max-height: 60rem;
+    min-height: 10rem;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .showcase .showcase-text {
+        padding: 7rem;
+    }
+}
+
 .white-button a {
     display: inline-block !important;
     padding: 10px 20px !important;
@@ -479,15 +506,15 @@ header
 .background-header .main-nav .nav li:last-child a,
 .header-area .main-nav .nav li:nth-child(6) a,
 .background-header .main-nav .nav li:nth-child(6) a {
-    padding: 0px 20px !important;
-    font-weight: 400;
+    padding: 0px 10px !important;
+    font-weight: 450;
 }
 
 .header-area .main-nav .nav li:last-child a:hover,
 .background-header .main-nav .nav li:last-child a:hover,
 .header-area .main-nav .nav li:nth-child(6) a:hover,
 .background-header .main-nav .nav li:nth-child(6) a:hover {
-    color: #fff !important;
+    color: #4b8ef1 !important;
 }
 
 .header-area .main-nav .nav li a {
@@ -1209,6 +1236,7 @@ About Us
 
 .card-text-center {
     text-align: justify;
+    color: #000;
 }
 
 
