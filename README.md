@@ -54,6 +54,7 @@ https://www.canva.com/design/DAEzLgFcLh0/H50F1TYT63civCDJIM3LRg/view?utm_content
   * Mencari gambar tanaman:
     
       https://www.pexels.com/id-id/ 
+      
       https://pixabay.com/id/ 
   
   * Mencari deskripsi tanaman: 
