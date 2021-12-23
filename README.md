@@ -1,6 +1,6 @@
 # **PROJECT CAPSTONE SIB DICODING 2021**
 ## TEMA: Resource Sharing & User Generated content
-## "SISTEM REKOMENDASI TANAMAN PANGAN UNTUK BUDIDAYA"
+## "SISTEM REKOMENDASI TANAMAN PANGAN UNTUK BUDIDAYA (TANAMSAJA)"
 
 **Team ID: CSD-090**
 
@@ -8,7 +8,56 @@ M298R4298 - Komang Wiweka Premana
 
 M014V4046 - Anak Agung Sinta Trisnajayanti
 
+Backgrounder:
+Sejak adanya pandemi Covid-19 sebagian besar masyarakat bekerja dari rumah. Berkebun adalah salah satu kegiatan positif yang bisa dilakukan jika memiliki waktu luang. Tetapi bagi orang awam untuk memulai berkebun tidaklah mudah karena mereka tidak paham mengenai tanaman apa saja yang cocok untuk ditanam disekitar mereka. 
+![messageImage_1640155652028](https://user-images.githubusercontent.com/89082302/147263850-cc810ade-0776-4f85-8c0e-5006f35fa395.jpg)
+![messageImage_1640155690878](https://user-images.githubusercontent.com/89082302/147263862-8eec4b44-137c-4a46-a6af-61f246dca7ca.jpg)
+![messageImage_1640156528371](https://user-images.githubusercontent.com/89082302/147263866-41a8ff1c-f3e8-439d-b4c6-b63b366835ba.jpg)
 
-Pada project capstone kali ini kami memilih tema Resource Sharing & User Generated content dengan judul “Sistem Rekomendasi Tanaman Pangan Untuk Budidaya”. Dimana pada pembuatan capstone ini kami menggunakan Machine Learning untuk memberikan rekomendasi kepada user dan Front-end untuk memberikan tampilan rekomendasi kepada user. Kemudian menggunakan dataset dari kaggle dalam membantu dalam proses pembuatan model machine learning. Langkah pertama yang kami lakukan yaitu dengan membuat sistem rekomendasinya terlebih dahulu dengan mencoba model-model yang sekiranya bagus jika diterapkan pada sistem ini. Setelah berhasil membuat sistem rekomendasi dengan model Machine Learning dilanjutkan dengan mendeploy model. Kemudian pada bagian Front-end pada website tersebut user akan diminta untuk menginput data sesuai keadaan sekitar seperti suhu, kelembaban, dll. Lalu outputnya akan menampilkan 5 rekomendasi tanaman pangan yang cocok untuk dibudidayakan dan dari sini akan membantu mereka untuk membuat keputusan yang tepat sebelum mencoba budidaya tanaman pangan. 
+Berdasarkan diagram diatas disini kami ingin membantu untuk merekomendasikan tanaman pangan yang optimal dan membantu membuat keputusan sebelum mencoba budidaya tanaman pangan. 
 
-Deployment : https://system-recommendation-crop.herokuapp.com/
+**Screenshots**
+
+
+**Deployed Link:**
+
+https://system-recommendation-crop.herokuapp.com/
+
+**Github Repo Link:**
+
+https://github.com/wiwekapremana/system-recommendation-crop 
+
+**10-Min Video Presentation Link:**
+
+**Slide Presentation Link:**
+
+https://www.canva.com/design/DAEzLgFcLh0/H50F1TYT63civCDJIM3LRg/view?utm_content=DAEzLgFcLh0&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton 
+
+**Other Resources Link:**
+* Library or external repository/API used:
+
+* Dataset Link: 
+
+  * https://www.kaggle.com/siddharthss/crop-recommendation-dataset
+
+* Academic Paper Link:
+
+  * Budiman Irwan, dkk. 2015. Penerapan Fungsi Data Mining Klasifikasi untuk Prediksi Masa Studi Mahasiswa Tepat Waktu pada Sistem Informasi Akademik Perguruan Tinggi. Jurnal Jupiter Vol. 7 No. 1
+  * Maesaroh Siti, Kusrini. 2017. Sistem Prediksi Produktifitas Pertanian Padi Menggunakan Data Mining. Vol. 7 No. 2
+  * Sukadi, T. 2013. Sistem Prediksi untuk Mendiagnsis Hama dan Penyakit Tanaman Padi. Indnesian Jurnal on computer Science – Speed (IJCSS). Vol. 10, No.2.
+  * https://towardsdatascience.com/building-a-logistic-regression-in-python-step-by-step-becd4d56c9c8 
+  * https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html 
+  * https://stackoverflow.com/questions/34674797/xgboost-xgbclassifier-defaults-in-python 
+
+* References Link:
+
+  * Mencari gambar tanaman:
+    
+      https://www.pexels.com/id-id/ 
+      https://pixabay.com/id/ 
+  
+  * Mencari deskripsi tanaman: 
+      
+      https://www.wikipedia.org/ 
+
+**Demo Video Link**
