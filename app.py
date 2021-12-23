@@ -33,6 +33,9 @@ def predict_proba(n, p, k, temp, humid, pH, rain):
 def welcome():
     return render_template('index.html')
 
+@app.route('/list-tanaman')
+def crop():
+    return render_template('crop.html')
 
 @app.route('/', methods=['POST'])
 def predict():
@@ -63,6 +66,7 @@ def predict():
     return render_template('index.html',plot_url=plot_url, prediction_text=format(output))
 
     # return render_template('index.html', plot_url=plot_url)
+
 
 if __name__ == "__main__":
     app.run(debug=True)

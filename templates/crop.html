@@ -54,13 +54,10 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section">
-                                <a href="#top" class="active">Beranda</a>
+                                <a href="{{ url_for('welcome') }}" class="active">Beranda</a>
                             </li>
                             <li class="scroll-to-section">
-                                <a href="#rec">Rekomendasi</a>
-                            </li>
-                            <li class="scroll-to-section">
-                                <a href="#kontak">Tentang Kami</a>
+                                <a href="{{ url_for('welcome') }}">Rekomendasi</a>
                             </li>
                         </ul>
                         <a class="menu-trigger">
@@ -90,7 +87,7 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <button type="button" class="btn btn-secondary">
-                        <a href="@app.route('index.html')">Prediksi Sekarang</a>
+                        <a href="{{ url_for('welcome') }}">Prediksi Sekarang</a>
                       </button>
                                     </div>
                                 </div>

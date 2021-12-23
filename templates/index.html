@@ -93,7 +93,7 @@
                         <a href="#rec">Prediksi Sekarang</a>
                       </button>
                                         <button type="button" class="btn btn-secondary">
-                        <a href="@app.route('crop.html')">Lihat Tanaman</a>
+                        <a href="{{ url_for('crop') }}">Lihat Tanaman</a>
                       </button>
                                     </div>
                                 </div>
@@ -233,10 +233,11 @@
   
     
     <section id="result" class="result-section position-relative">
-     <img class="rounded mx-auto d-block"
+      <div class="recc"><img class="rounded mx-auto d-block"
         style="width: 50%; height: auto;"
         src="data:image/png;base64, {{ plot_url }}"
-      />
+      /></div>
+     
       {% if prediction_text == "PADI" %}
 			<div class="card mb-3 card-center" style="width: 35rem;">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
