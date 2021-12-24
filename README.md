@@ -23,7 +23,6 @@ Berdasarkan diagram diatas disini kami ingin membantu untuk merekomendasikan tan
 
  * Rekomendasi
  ![tanamsaja2](https://user-images.githubusercontent.com/89082302/147283103-8b8b8e8b-25ca-4759-b156-8daa60d50385.png)
-asi
  
  * Tentang Kami
  ![tanamsaja3](https://user-images.githubusercontent.com/89082302/147283131-e9188418-538f-425c-bedc-bf9bd3c3a733.png)
@@ -37,11 +36,9 @@ asi
 
 https://system-recommendation-crop.herokuapp.com/
 
-**Github Repo Link:**
-
-https://github.com/wiwekapremana/system-recommendation-crop 
-
 **10-Min Video Presentation Link:**
+
+https://drive.google.com/file/d/1RBn3QhtOR1-cXz9OpsACGwzpP7XApTTy/view?usp=sharing 
 
 **Slide Presentation Link:**
 
@@ -49,6 +46,14 @@ https://www.canva.com/design/DAEzLgFcLh0/H50F1TYT63civCDJIM3LRg/view?utm_content
 
 **Other Resources Link:**
 * Library or external repository/API used:
+
+   * Platform : https://www.heroku.com 
+ 
+   * Library CSS : https://getbootstrap.com/
+ 
+   * Server HTTP : GUNICORN 
+ 
+   * Library Python : FLASK
 
 * Dataset Link: 
 
@@ -76,3 +81,5 @@ https://www.canva.com/design/DAEzLgFcLh0/H50F1TYT63civCDJIM3LRg/view?utm_content
       https://www.wikipedia.org/ 
 
 **Demo Video Link**
+
+https://www.youtube.com/watch?v=YZzTczBN85Y 
