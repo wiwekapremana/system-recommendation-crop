@@ -1053,13 +1053,13 @@ Banner Style
 }
 
 .main-banner .right-image {
-    text-align: center;
+    text-align: end;
     position: relative;
     z-index: 20;
 }
 
 .main-banner .right-image img {
-    max-width: 710px;
+    width: 30rem;
 }
 
 .main-banner .left-content .white-button a {
@@ -1646,5 +1646,13 @@ responsive
     }
     form#contact {
         padding: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-center {
+        margin: 0 auto;
+        float: none;
+        width: 40rem;
     }
 }

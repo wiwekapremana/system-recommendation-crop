@@ -20,7 +20,7 @@
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../static/assets/css/templatemo-chain-app-dev.css" />
+    <link rel="stylesheet" href="../static/assets/css/style.css" />
     <link rel="stylesheet" href="../static/assets/css/animated.css" />
     <link rel="stylesheet" href="../static/assets/css/owl.css" />
     <link rel="stylesheet" href="../static/assets/css/custom.css" />
@@ -101,7 +101,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                                <img src="assets/images/slider-dec.png" alt="" />
+                                <img src="../static/assets/images/logo2.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -234,12 +234,12 @@
     
     <section id="result" class="result-section position-relative">
       <div class="recc"><img class="rounded mx-auto d-block"
-        style="width: 50%; height: auto;"
+        style="width: 25rem; height: auto;"
         src="data:image/png;base64, {{ plot_url }}"
       /></div>
      
       {% if prediction_text == "PADI" %}
-			<div class="card mb-3 card-center" style="width: 35rem;">
+			<div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/padi.jpg" class="card-img-top" alt="padi">
@@ -249,7 +249,7 @@
         </div>
       </div>
 			{% elif prediction_text == "JAGUNG" %}
-			<div class="card mb-3 card-center" style="width: 35rem;">
+			<div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/jagung.jpg" class="card-img-top" alt="jagung">
@@ -259,7 +259,7 @@
         </div>
       </div>
 			{% elif prediction_text == "BUNCIS" %}
-			<div class="card mb-3 card-center" style="width: 35rem;">
+			<div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/buncis.jpg" class="card-img-top" alt="buncis">
@@ -271,7 +271,7 @@
 			{% elif prediction_text == "KACANG MERAH" %}
       <h1 class="text-center">Rekomendasi Terbaik</h1>
       <br>
-      <div class="card mb-3 card-center" style="width: 40rem;">
+      <div class="card mb-3 card-center">
         <img src="../static/assets/images/kacangmerah.jpg" class="card-img-top" alt="kacang merah">
         <div class="card-body">
           <h5 class="card-title text-center">Tanaman Kacang Merah</h5>
@@ -279,7 +279,7 @@
         </div>
       </div>
 			{% elif prediction_text == "KACANG GUDE" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/gude.jpg" class="card-img-top" alt="kacang gude">
@@ -289,7 +289,7 @@
         </div>
       </div>
 			{% elif prediction_text == "KACANG MATKI" %}
-			<div class="card mb-3 card-center" style="width: 35rem;">
+			<div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/kacangmatki.jpg" class="card-img-top" alt="kacang matki">
@@ -299,7 +299,7 @@
         </div>
       </div>		
 			{% elif prediction_text == "KACANG HIJAU" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/kacanghijau.jpg" class="card-img-top" alt="kacang hijau">
@@ -309,7 +309,7 @@
         </div>
       </div>
 			{% elif prediction_text == "KACANG LENTIL" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/lentil.jpg" class="card-img-top" alt="kacang lentil">
@@ -319,7 +319,7 @@
         </div>
       </div>
 			{% elif prediction_text == "DELIMA" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/delima.jpg" class="card-img-top" alt="delima">
@@ -329,7 +329,7 @@
         </div>
       </div>
 			{% elif prediction_text == "PISANG" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/pisang.jpg" class="card-img-top" alt="pisang">
@@ -339,7 +339,7 @@
         </div>
       </div>
 			{% elif prediction_text == "KACANG HITAM" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/blackgram.jpg" class="card-img-top" alt="kacang hitam">
@@ -349,7 +349,7 @@
         </div>
       </div>	
 			{% elif prediction_text == "MANGGA" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/mangga.jpg" class="card-img-top" alt="mangga">
@@ -359,7 +359,7 @@
         </div>
       </div>
 			{% elif prediction_text == "ANGGUR" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/anggur.jpg" class="card-img-top" alt="anggur">
@@ -369,7 +369,7 @@
         </div>
       </div>
 			{% elif prediction_text == "SEMANGKA" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/semangka.jpg" class="card-img-top" alt="semangka">
@@ -379,7 +379,7 @@
         </div>
       </div>
 			{% elif prediction_text == "MUSKMELON" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/muskmelon.jpg" class="card-img-top" alt="melon">
@@ -389,7 +389,7 @@
         </div>
       </div>
 			{% elif prediction_text == "APEL" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/apel.jpg" class="card-img-top" alt="apel">
@@ -399,7 +399,7 @@
         </div>
       </div>
 			{% elif prediction_text == "JERUK" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/jeruk.jpg" class="card-img-top" alt="jeruk">
@@ -409,7 +409,7 @@
         </div>
       </div>
 			{% elif prediction_text == "PEPAYA" %}
-			<div class="card mb-3 card-center" style="width: 35rem;">
+			<div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/pepaya.jpg" class="card-img-top" alt="pepaya">
@@ -419,7 +419,7 @@
         </div>
       </div>
 			{% elif prediction_text == "KELAPA" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/kelapa.jpg" class="card-img-top" alt="kelapa">
@@ -429,7 +429,7 @@
         </div>
       </div>
 			{% elif prediction_text == "KAPAS" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/kapas.jpg" class="card-img-top" alt="kapas">
@@ -439,7 +439,7 @@
         </div>
       </div>	
 			{% elif prediction_text == "RAMI" %}
-      <div class="card mb-3 card-center" style="width: 35rem;">
+      <div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/rami.jpg" class="card-img-top" alt="rami">
@@ -449,7 +449,7 @@
         </div>
       </div>
 			{% elif prediction_text == "KOPI" %}
-			<div class="card mb-3 card-center" style="width: 35rem;">
+			<div class="card mb-3 card-center">
         <h1 class="text-center">Rekomendasi Terbaik</h1>
         <br>
         <img src="../static/assets/images/kopi.jpg" class="card-img-top" alt="kopi">
