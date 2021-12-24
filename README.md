@@ -17,6 +17,20 @@ Sejak adanya pandemi Covid-19 sebagian besar masyarakat bekerja dari rumah. Berk
 Berdasarkan diagram diatas disini kami ingin membantu untuk merekomendasikan tanaman pangan yang optimal dan membantu membuat keputusan sebelum mencoba budidaya tanaman pangan. 
 
 **Screenshots**
+ 
+ * Beranda
+ ![tanamsaja1](https://user-images.githubusercontent.com/89082302/147283084-c52eaa70-0ddf-4903-974f-95004d50a0b8.png)
+
+ * Rekomendasi
+ ![tanamsaja2](https://user-images.githubusercontent.com/89082302/147283103-8b8b8e8b-25ca-4759-b156-8daa60d50385.png)
+asi
+ 
+ * Tentang Kami
+ ![tanamsaja3](https://user-images.githubusercontent.com/89082302/147283131-e9188418-538f-425c-bedc-bf9bd3c3a733.png)
+
+ 
+ * Lihat Tanaman
+![tanamsaja4](https://user-images.githubusercontent.com/89082302/147283144-6a6d3028-8fcd-4f18-8ab2-4ada3d5b9bc0.png)
 
 
 **Deployed Link:**
