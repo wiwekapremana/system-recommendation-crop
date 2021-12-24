@@ -8,7 +8,7 @@ M298R4298 - Komang Wiweka Premana
 
 M014V4046 - Anak Agung Sinta Trisnajayanti
 
-Backgrounder:
+**Backgrounder:**
 Sejak adanya pandemi Covid-19 sebagian besar masyarakat bekerja dari rumah. Berkebun adalah salah satu kegiatan positif yang bisa dilakukan jika memiliki waktu luang. Tetapi bagi orang awam untuk memulai berkebun tidaklah mudah karena mereka tidak paham mengenai tanaman apa saja yang cocok untuk ditanam disekitar mereka. 
 ![messageImage_1640155652028](https://user-images.githubusercontent.com/89082302/147263850-cc810ade-0776-4f85-8c0e-5006f35fa395.jpg)
 ![messageImage_1640155690878](https://user-images.githubusercontent.com/89082302/147263862-8eec4b44-137c-4a46-a6af-61f246dca7ca.jpg)
@@ -19,7 +19,7 @@ Berdasarkan diagram diatas disini kami ingin membantu untuk merekomendasikan tan
 **Screenshots**
  
  * Beranda
- ![tanamsaja1](https://user-images.githubusercontent.com/89082302/147283084-c52eaa70-0ddf-4903-974f-95004d50a0b8.png)
+![messageImage_1640346286061](https://user-images.githubusercontent.com/89082302/147350106-8c08002f-56b6-4fea-9576-740b5bc47f8b.jpg)
 
  * Rekomendasi
  ![tanamsaja2](https://user-images.githubusercontent.com/89082302/147283103-8b8b8e8b-25ca-4759-b156-8daa60d50385.png)
