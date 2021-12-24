@@ -42,6 +42,7 @@ https://system-recommendation-crop.herokuapp.com/
 https://github.com/wiwekapremana/system-recommendation-crop 
 
 **10-Min Video Presentation Link:**
+https://drive.google.com/file/d/1RBn3QhtOR1-cXz9OpsACGwzpP7XApTTy/view?usp=sharing 
 
 **Slide Presentation Link:**
 
@@ -76,3 +77,4 @@ https://www.canva.com/design/DAEzLgFcLh0/H50F1TYT63civCDJIM3LRg/view?utm_content
       https://www.wikipedia.org/ 
 
 **Demo Video Link**
+https://www.youtube.com/watch?v=YZzTczBN85Y 
